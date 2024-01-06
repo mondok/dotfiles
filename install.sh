@@ -73,25 +73,20 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "Setting ZSH as shell..."
 chsh -s /bin/zsh
 
-# Apps
-apps=(
-  google-chrome
-  spotify
-  iterm2
-  1password
-  visual-studio-code
-  rubymine
-  rider
-  handbrake
-)
+# # Apps
+# apps=(
+#   spotify
+#   iterm2
+#   visual-studio-code
+#   rubymine
+#   rider
+#   handbrake
+# )
 
-# Install apps to /Applications
-# Default is: /Users/$user/Applications
-echo "installing apps with Cask..."
-brew cask install --appdir="/Applications" ${apps[@]}
-
-brew cask cleanup
-brew cleanup
+# # Install apps to /Applications
+# # Default is: /Users/$user/Applications
+# echo "installing apps with Cask..."
+# brew cask install --appdir="/Applications" ${apps[@]}
 
 echo "Setting some Mac settings..."
 
